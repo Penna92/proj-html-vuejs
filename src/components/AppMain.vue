@@ -41,6 +41,7 @@
       <h6>PHASELLUS EGET METUS</h6>
       <h2>All the latest news</h2>
       <div class="orange-line"></div>
+      <!-- ROW WITH 3 PHOTOS -->
       <div class="row my-5">
         <div class="col-12 col-md-6 col-lg-4 mb-3">
           <img
@@ -50,7 +51,7 @@
           />
           <h5 class="mt-3">Morbi vitae dui euismod volputate sollicitudin</h5>
           <p class="article-date">
-            October 11th,2015 |
+            October 11th, 2015 |
             <span style="color: black; font-weight: bold">2 Comments</span>
           </p>
           <p>
@@ -66,7 +67,7 @@
             alt="Smartphone-2"
           />
           <h5 class="mt-3">Morbi vitae dui euismod volputate sollicitudin</h5>
-          <p class="article-date">October 11th,2015 | Comments off</p>
+          <p class="article-date">October 11th, 2015 | Comments off</p>
           <p>
             Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
             erat fringilla, vestibulum placerat metus mattis. Aenean dictum
@@ -77,10 +78,10 @@
           <img
             class="img-fluid"
             src="../assets/img/post_feat_img_23-700x441.jpg"
-            alt="Smartwatch-3"
+            alt="Smartwatch-1"
           />
           <h5 class="mt-3">Morbi vitae dui euismod volputate sollicitudin</h5>
-          <p class="article-date">October 11th,2015 | Comments off</p>
+          <p class="article-date">October 11th, 2015 | Comments off</p>
           <p>
             Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
             erat fringilla, vestibulum placerat metus mattis. Aenean dictum
@@ -88,6 +89,71 @@
           </p>
         </div>
       </div>
+      <!-- /ROW WITH 3 PHOTOS -->
+
+      <!-- FEATURED ARTICLE -->
+      <div id="featured-article" class="container-fluid text-white">
+        <div class="container">
+          <h6>FEATURED ARTICLE</h6>
+          <h2>Cras malesuada et orci eget pharetra</h2>
+          <p>
+            In quis lectus sed leo elementum faucibus in dapibus dictum.
+            Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at
+            bibendum sadips ets ipsums dolores facilis uns leo lectus.
+          </p>
+          <button type="button" class="btn btn-dark">
+            READ MORE <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- /FEATURED ARTICLE -->
+
+      <!-- ROW WITH 3 PHOTOS -->
+      <div class="row my-5">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <img
+            class="img-fluid"
+            src="../assets/img/post_feat_img_22-700x441.jpg"
+            alt="Tablet-1"
+          />
+          <h5 class="mt-3">Fusce sollicitudin nunc sed placerat varius</h5>
+          <p class="article-date">October 11th, 2015 | Comments off</p>
+          <p>
+            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
+            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
+            vitae nisl.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <img
+            class="img-fluid"
+            src="../assets/img/post_feat_img_21-700x441.jpg"
+            alt="Camera-1"
+          />
+          <h5 class="mt-3">Fusce sollicitudin nunc sed placerat varius</h5>
+          <p class="article-date">October 11th, 2015 | Comments off</p>
+          <p>
+            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
+            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
+            vitae nisl.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <img
+            class="img-fluid"
+            src="../assets/img/post_feat_img_20-700x441.jpg"
+            alt="Display-1"
+          />
+          <h5 class="mt-3">Fusce sollicitudin nunc sed placerat varius</h5>
+          <p class="article-date">October 11th, 2015 | Comments off</p>
+          <p>
+            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
+            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
+            vitae nisl.
+          </p>
+        </div>
+      </div>
+      <!-- /ROW WITH 3 PHOTOS -->
     </section>
     <!-- /LATEST NEWS SECTION -->
   </div>
@@ -99,7 +165,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../assets/styles/variables.scss";
 .article-date {
@@ -126,5 +191,20 @@ p {
 }
 #jumbotron-sub-section {
   background-color: $silver-chalice;
+}
+#featured-article {
+  background: url("../assets/img/featured_article_1_bg.jpg") center center
+    no-repeat;
+  background-size: cover;
+  .container {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    p {
+      color: $white;
+    }
+    button {
+      font-weight: bold;
+    }
+  }
 }
 </style>
