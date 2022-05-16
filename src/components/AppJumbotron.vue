@@ -36,6 +36,7 @@ export default {
     button {
       background-color: $eastern-blue;
       font-weight: bold;
+      width: 200px;
     }
   }
 }

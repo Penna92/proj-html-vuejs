@@ -130,7 +130,7 @@
             src="../assets/img/post_feat_img_21-700x441.jpg"
             alt="Camera-1"
           />
-          <h5 class="mt-3">Fusce sollicitudin nunc sed placerat varius</h5>
+          <h5 class="mt-3">Donec facilis sodales leo sit amet laoreet</h5>
           <p class="article-date">October 11th, 2015 | Comments off</p>
           <p>
             Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
@@ -144,7 +144,7 @@
             src="../assets/img/post_feat_img_20-700x441.jpg"
             alt="Display-1"
           />
-          <h5 class="mt-3">Fusce sollicitudin nunc sed placerat varius</h5>
+          <h5 class="mt-3">Proin eu purus sed aru aliquet curabis vens</h5>
           <p class="article-date">October 11th, 2015 | Comments off</p>
           <p>
             Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
@@ -154,6 +154,85 @@
         </div>
       </div>
       <!-- /ROW WITH 3 PHOTOS -->
+
+      <!-- ROW WITH 2 COLUMNS 2/3 - 1/3 -->
+      <div class="row w-100">
+        <!-- REVIEWED PRODUCT -->
+        <div
+          id="reviewed-product"
+          class="
+            container
+            d-flex
+            flex-column
+            justify-content-center
+            text-white
+            col-sm-12 col-lg-8
+            mb-3
+          "
+        >
+          <h6>REVIEWED PRODUCT</h6>
+          <h2>
+            Mauris viverra atisan ipsum eget felis primis efficitur varius
+          </h2>
+          <p class="text-white">
+            In quis lectus sed leo elementum faucibus in dapibus dictum.
+            Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at
+            bibendum
+          </p>
+          <button type="button" class="btn btn-dark">
+            READ MORE <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+        <!-- REVIEWED PRODUCT -->
+
+        <!-- TUTORIALS & GUIDES -->
+        <aside id="tutorial-guides" class="container col-sm-12 col-lg-4 mb-3">
+          <h2>Tutorials &#38; Guides</h2>
+          <div class="orange-line"></div>
+          <div class="d-flex flex-column justify-content-between">
+            <div class="thumbnails row my-3">
+              <div class="col-4">
+                <img
+                  class="img-fluid"
+                  src="../assets/img/post_feat_img_23-147x118.jpg"
+                  alt="Smartwatch thumbnail"
+                />
+              </div>
+              <div class="col-8">
+                <h5>Donec oranare pretium eget scelisque justo</h5>
+                <p class="article-date">October 11th, 2015 | Comments off</p>
+              </div>
+            </div>
+            <div class="thumbnails row my-3">
+              <div class="col-4">
+                <img
+                  class="img-fluid"
+                  src="../assets/img/post_feat_img_22-147x118.jpg"
+                  alt="Smartwatch thumbnail"
+                />
+              </div>
+              <div class="col-8">
+                <h5>Donec oranare pretium eget scelisque justo</h5>
+                <p class="article-date">October 11th, 2015 | Comments off</p>
+              </div>
+            </div>
+            <div class="thumbnails row my-3">
+              <div class="col-4">
+                <img
+                  class="img-fluid"
+                  src="../assets/img/post_feat_img_20-147x118.jpg"
+                  alt="Smartwatch thumbnail"
+                />
+              </div>
+              <div class="col-8">
+                <h5>Donec oranare pretium eget scelisque justo</h5>
+                <p class="article-date">October 11th, 2015 | Comments off</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- /TUTORIALS & GUIDES -->
+      </div>
     </section>
     <!-- /LATEST NEWS SECTION -->
   </div>
@@ -167,8 +246,14 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/styles/variables.scss";
+button {
+  font-weight: bold;
+  background-color: black;
+  width: 200px;
+}
 .article-date {
   font-size: 12px;
+  color: $cape-cod;
 }
 .orange-line {
   height: 20px;
@@ -202,9 +287,12 @@ p {
     p {
       color: $white;
     }
-    button {
-      font-weight: bold;
-    }
   }
+}
+#reviewed-product {
+  background: url("../assets/img/featured_article_2_bg.jpg") center center
+    no-repeat;
+  background-size: cover;
+  border-right: 20px solid white; //alternativa utile in certi casi per creare dei margini senza sballare flex.
 }
 </style>

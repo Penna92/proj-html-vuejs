@@ -86,6 +86,7 @@ export default {
     }
     button {
       font-weight: bold;
+      background-color: black;
     }
   }
 }
