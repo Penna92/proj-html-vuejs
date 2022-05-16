@@ -1,0 +1,20 @@
+// BOOTSTRAP
+@import "~bootstrap/scss/bootstrap.scss";
+
+// FONTSOURCE
+// @import "~@fontsource/montserrat/index.css";
+// @import "~@fontsource/montserrat/700.css";
+
+//FONTAWESOME
+$fa-font-path: "./webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+
+//STYLES
+@import "./variables.scss";
+
+body {
+  background-color: $white;
+  font-family: $main-font;
+}
