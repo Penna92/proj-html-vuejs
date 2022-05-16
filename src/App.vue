@@ -6,6 +6,7 @@
     </header>
     <main>
       <AppMain />
+      <AppForum />
     </main>
     <footer>
       <AppFooter />
@@ -18,6 +19,7 @@ import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
+import AppForum from "./components/AppForum.vue";
 
 export default {
   name: "App",
@@ -26,6 +28,7 @@ export default {
     AppJumbotron,
     AppMain,
     AppFooter,
+    AppForum,
   },
 };
 </script>

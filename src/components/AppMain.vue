@@ -233,6 +233,7 @@
         </aside>
         <!-- /TUTORIALS & GUIDES -->
       </div>
+      <!-- /ROW WITH 2 COLUMNS 2/3 - 1/3 -->
     </section>
     <!-- /LATEST NEWS SECTION -->
   </div>

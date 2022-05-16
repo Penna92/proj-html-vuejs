@@ -57,6 +57,7 @@ export default {
   right: 0;
   height: 100px;
   background-color: $eastern-blue;
+  z-index: 999;
   nav {
     height: 100%;
     line-height: 100px;
