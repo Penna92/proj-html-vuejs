@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="header">
     <div
       class="
         d-flex
@@ -50,35 +50,42 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/styles/variables.scss";
-div {
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
   height: 100px;
   background-color: $eastern-blue;
-}
-nav {
-  height: 100%;
-  line-height: 100px;
-  ul {
+  nav {
     height: 100%;
-    margin-bottom: 0 !important;
-    li {
-      position: relative;
+    line-height: 100px;
+    ul {
       height: 100%;
-      list-style-type: none;
-      cursor: pointer;
-      &:hover {
+      margin-bottom: 0 !important;
+      li {
+        position: relative;
+        height: 100%;
+        list-style-type: none;
+        cursor: pointer;
+        &:hover {
+          i {
+            display: block;
+          }
+        }
         i {
-          display: block;
+          font-size: 30px;
+          position: absolute;
+          bottom: 0;
+          color: $eastern-blue;
+          right: 50%;
+          transform: translate(50%, 50%);
+          display: none;
         }
       }
-      i {
-        font-size: 30px;
-        position: absolute;
-        bottom: 0;
-        color: $eastern-blue;
-        right: 50%;
-        transform: translate(50%, 50%);
-        display: none;
-      }
+    }
+    button {
+      font-weight: bold;
     }
   }
 }
