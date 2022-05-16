@@ -33,6 +33,32 @@
       <!-- /MAIN GRID -->
     </section>
     <!-- /FORUM SECTIONS -->
+
+    <!-- GO TO OUR FORUM -->
+    <div id="our-forum" class="text-center text-white">
+      <h5>
+        <span>GO TO OUR FORUM <i class="fa-solid fa-right-long"></i></span>
+      </h5>
+    </div>
+    <!-- /GO TO OUR FORUM -->
+
+    <!-- COMMUNITY HERO -->
+    <div id="community-hero" class="d-flex justify-content-center text-white">
+      <div class="wrapper">
+        <h2>
+          Hey! Join to our <br />
+          Community
+        </h2>
+        <p class="my-3">
+          Nulla molestie torto nec lectus venenatis, sed blandit dui finibus.
+          Curabitur feugiat vulputate purus ipsums dolore ficilis uns etra.
+        </p>
+        <button type="button" class="btn text-white">
+          SIGN UP <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- /COMMUNITY HERO -->
   </section>
 </template>
 
@@ -70,7 +96,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";
-#our-blog {
+#our-blog,
+#our-forum {
   height: 100px;
   background-color: black;
   h5 {
@@ -119,6 +146,22 @@ export default {
     }
     h5 {
       font-weight: 900;
+    }
+  }
+}
+#community-hero {
+  background: url("../assets/img/join_now_cta_bg.jpg") center center no-repeat;
+  background-size: cover;
+  .wrapper {
+    width: 50%;
+    padding: 100px 0;
+    h2 {
+      font-weight: 900;
+    }
+    button {
+      background-color: $eastern-blue;
+      font-weight: bold;
+      width: 200px;
     }
   }
 }
