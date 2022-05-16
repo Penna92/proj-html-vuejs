@@ -1,13 +1,85 @@
 <template>
-  <div></div>
+  <div>
+    <div
+      class="
+        d-flex
+        container
+        align-items-center
+        justify-content-between
+        text-white
+      "
+    >
+      <!-- LOGO -->
+      <div id="header-logo" class="d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="Logo" />
+      </div>
+      <!-- /LOGO -->
+      <!-- NAVBAR -->
+      <nav class="d-flex align-items-center">
+        <ul class="d-flex">
+          <li v-for="(link, index) in headerLinks" :key="index" class="mx-3">
+            {{ link }} <i class="fa-solid fa-caret-down"></i>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-dark">JOIN US</button>
+        <i class="fa-solid fa-magnifying-glass ms-3"></i>
+      </nav>
+      <!-- /NAVBAR -->
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      // NAVBAR LINKS ARRAY
+      headerLinks: [
+        "Home",
+        "Apple",
+        "Microsoft",
+        "Android",
+        "Forums",
+        "Contact us",
+      ],
+    };
+  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/styles/variables.scss";
+div {
+  height: 100px;
+  background-color: $eastern-blue;
+}
+nav {
+  height: 100%;
+  line-height: 100px;
+  ul {
+    height: 100%;
+    margin-bottom: 0 !important;
+    li {
+      position: relative;
+      height: 100%;
+      list-style-type: none;
+      cursor: pointer;
+      &:hover {
+        i {
+          display: block;
+        }
+      }
+      i {
+        font-size: 30px;
+        position: absolute;
+        bottom: 0;
+        color: $eastern-blue;
+        right: 50%;
+        transform: translate(50%, 50%);
+        display: none;
+      }
+    }
+  }
+}
 </style>
