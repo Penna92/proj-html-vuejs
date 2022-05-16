@@ -118,6 +118,7 @@ export default {
   h6 {
     font-size: 12px;
     font-weight: 700;
+    color: $cape-cod;
   }
   h5 {
     font-size: 16px;
