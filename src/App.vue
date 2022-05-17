@@ -11,6 +11,7 @@
     </main>
     <footer>
       <AppFooter />
+      <AppToTop />
     </footer>
   </div>
 </template>
@@ -22,6 +23,7 @@ import AppFooter from "./components/AppFooter.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
 import AppForum from "./components/AppForum.vue";
 import AppNewsletter from "./components/AppNewsletter.vue";
+import AppToTop from "./components/AppToTop.vue";
 
 export default {
   name: "App",
@@ -32,6 +34,7 @@ export default {
     AppFooter,
     AppForum,
     AppNewsletter,
+    AppToTop,
   },
 };
 </script>
