@@ -17,14 +17,24 @@ $fa-font-path: "./webfonts";
 //STYLES
 @import "./variables.scss";
 
+// GENERAL RULES
 body {
   background-color: $white;
   // font-family: $main-font;
 }
 
+// EFFECTS ON HOVER
 button {
   font-weight: bold;
   &:hover {
     background-color: $salmon !important;
+  }
+}
+
+img {
+  transition: transform 0.3s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
   }
 }
