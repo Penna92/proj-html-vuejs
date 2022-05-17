@@ -290,5 +290,8 @@ p {
     no-repeat;
   background-size: cover;
   border-right: 20px solid white; //alternativa utile in certi casi per creare dei margini senza sballare flex.
+  h6 {
+    color: white;
+  }
 }
 </style>

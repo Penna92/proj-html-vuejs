@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="row my-5"> -->
   <div>
     <img
       class="img-fluid"
@@ -17,7 +16,6 @@
       {{ item.text }}
     </p>
   </div>
-  <!-- </div> -->
 </template>
 
 <script>
