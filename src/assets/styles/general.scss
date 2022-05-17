@@ -21,8 +21,10 @@ body {
   background-color: $white;
   // font-family: $main-font;
 }
-// button {
-//   font-weight: bold;
-//   background-color: black;
-//   width: 200px;
-// }
+
+button {
+  font-weight: bold;
+  &:hover {
+    background-color: $salmon !important;
+  }
+}

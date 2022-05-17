@@ -13,7 +13,7 @@
       <h2>Forum Sections</h2>
       <div class="orange-line"></div>
       <!-- MAIN GRID -->
-      <div class="container row d-flex justify-content-center gap-5 my-5">
+      <div class="container row d-flex justify-content-between gap-5 my-5">
         <div
           class="
             card
@@ -100,6 +100,10 @@ export default {
 #our-forum {
   height: 100px;
   background-color: black;
+  cursor: pointer;
+  &:hover {
+    background-color: $eastern-blue;
+  }
   h5 {
     line-height: 100px;
     span {
@@ -134,7 +138,21 @@ export default {
     width: 250px;
     height: 250px;
     border-top: 5px solid $eastern-blue;
+    cursor: pointer;
+    &:hover {
+      h5 {
+        color: $salmon;
+        transform: scale(1.2);
+      }
+      .orange-circle {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px 2px $salmon;
+        // box-shadow: 0px 2px 2px 2px $salmon;
+        border: 3px solid white;
+      }
+    }
     .orange-circle {
+      transition: transform 0.2s;
       width: 70px;
       height: 70px;
       line-height: 70px;
@@ -146,6 +164,7 @@ export default {
       }
     }
     h5 {
+      transition: transform 0.3s;
       font-weight: 900;
     }
   }

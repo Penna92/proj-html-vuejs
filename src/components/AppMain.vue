@@ -41,6 +41,7 @@
       <h6>PHASELLUS EGET METUS</h6>
       <h2>All the latest news</h2>
       <div class="orange-line"></div>
+
       <!-- ROW WITH 3 PHOTOS -->
       <div class="row my-5">
         <div class="col-12 col-md-6 col-lg-4 mb-3">
@@ -268,6 +269,10 @@ h6 {
 h5 {
   font-size: 16px;
   font-weight: 900;
+  cursor: pointer;
+  &:hover {
+    color: $eastern-blue;
+  }
 }
 h2 {
   font-weight: 900;
