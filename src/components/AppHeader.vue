@@ -106,7 +106,6 @@ export default {
       }
     }
     button {
-      font-weight: bold;
       background-color: black;
     }
     .fa-magnifying-glass {

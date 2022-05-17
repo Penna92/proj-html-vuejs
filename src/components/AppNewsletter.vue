@@ -30,7 +30,6 @@ export default {
     width: 400px;
   }
   button {
-    font-weight: bold;
     background-color: black;
     width: 200px;
   }

@@ -25,7 +25,7 @@ body {
 
 // EFFECTS ON HOVER
 button {
-  font-weight: bold;
+  font-weight: bold !important;
   &:hover {
     background-color: $salmon !important;
   }

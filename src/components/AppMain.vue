@@ -44,50 +44,12 @@
 
       <!-- ROW WITH 3 PHOTOS -->
       <div class="row my-5">
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <img
-            class="img-fluid"
-            src="../assets/img/post_feat_img_25-700x441.jpg"
-            alt="Smartphone-1"
-          />
-          <h5 class="mt-3">Morbi vitae dui euismod volputate sollicitudin</h5>
-          <p class="article-date">
-            October 11th, 2015 |
-            <span style="color: black; font-weight: bold">2 Comments</span>
-          </p>
-          <p>
-            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
-            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
-            vitae nisl.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <img
-            class="img-fluid"
-            src="../assets/img/post_feat_img_24-700x441.jpg"
-            alt="Smartphone-2"
-          />
-          <h5 class="mt-3">Morbi vitae dui euismod volputate sollicitudin</h5>
-          <p class="article-date">October 11th, 2015 | Comments off</p>
-          <p>
-            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
-            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
-            vitae nisl.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <img
-            class="img-fluid"
-            src="../assets/img/post_feat_img_23-700x441.jpg"
-            alt="Smartwatch-1"
-          />
-          <h5 class="mt-3">Morbi vitae dui euismod volputate sollicitudin</h5>
-          <p class="article-date">October 11th, 2015 | Comments off</p>
-          <p>
-            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
-            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
-            vitae nisl.
-          </p>
+        <div
+          class="col-12 col-md-6 col-lg-4 mb-3"
+          v-for="card in sliderFirst"
+          :key="card"
+        >
+          <AppSlider :item="card" />
         </div>
       </div>
       <!-- /ROW WITH 3 PHOTOS -->
@@ -111,47 +73,12 @@
 
       <!-- ROW WITH 3 PHOTOS -->
       <div class="row my-5">
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <img
-            class="img-fluid"
-            src="../assets/img/post_feat_img_22-700x441.jpg"
-            alt="Tablet-1"
-          />
-          <h5 class="mt-3">Fusce sollicitudin nunc sed placerat varius</h5>
-          <p class="article-date">October 11th, 2015 | Comments off</p>
-          <p>
-            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
-            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
-            vitae nisl.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <img
-            class="img-fluid"
-            src="../assets/img/post_feat_img_21-700x441.jpg"
-            alt="Camera-1"
-          />
-          <h5 class="mt-3">Donec facilis sodales leo sit amet laoreet</h5>
-          <p class="article-date">October 11th, 2015 | Comments off</p>
-          <p>
-            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
-            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
-            vitae nisl.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <img
-            class="img-fluid"
-            src="../assets/img/post_feat_img_20-700x441.jpg"
-            alt="Display-1"
-          />
-          <h5 class="mt-3">Proin eu purus sed aru aliquet curabis vens</h5>
-          <p class="article-date">October 11th, 2015 | Comments off</p>
-          <p>
-            Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut
-            erat fringilla, vestibulum placerat metus mattis. Aenean dictum
-            vitae nisl.
-          </p>
+        <div
+          class="col-12 col-md-6 col-lg-4 mb-3"
+          v-for="card in sliderSecond"
+          :key="card"
+        >
+          <AppSlider :item="card" />
         </div>
       </div>
       <!-- /ROW WITH 3 PHOTOS -->
@@ -201,7 +128,7 @@
               </div>
               <div class="col-8">
                 <h5>Donec oranare pretium eget scelisque justo</h5>
-                <p class="article-date">October 11th, 2015 | Comments off</p>
+                <p class="article-date">October 11th, 2015 | Comments Off</p>
               </div>
             </div>
             <div class="thumbnails row my-3">
@@ -241,28 +168,85 @@
 </template>
 
 <script>
+import AppSlider from "../components/AppSlider.vue";
 export default {
   name: "AppMain",
+  components: {
+    AppSlider,
+  },
+  data() {
+    return {
+      sliderFirst: [
+        {
+          image: "post_feat_img_25-700x441",
+          title: "Morbi vitae dui euismod volputate sollicitudin",
+          date: "October 11th, 2015 |",
+          commentsNumber: "2 Comments",
+          text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+        },
+        {
+          image: "post_feat_img_24-700x441",
+          title: "Vivamus pellenteque, felis quis varius",
+          date: "October 11th, 2015 |",
+          commentsNumber: "Comments Off",
+          text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+        },
+        {
+          image: "post_feat_img_23-700x441",
+          title: "Donec ornare pretium eget scelisque justo",
+          date: "October 11th, 2015 |",
+          commentsNumber: "Comments Off",
+          text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+        },
+      ],
+
+      sliderSecond: [
+        {
+          image: "post_feat_img_22-700x441",
+          title: "Morbi vitae dui euismod volputate sollicitudin",
+          date: "October 11th, 2015 |",
+          commentsNumber: "Comments Off",
+          text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+        },
+        {
+          image: "post_feat_img_21-700x441",
+          title: "Vivamus pellenteque, felis quis varius",
+          date: "October 11th, 2015 |",
+          commentsNumber: "Comments Off",
+          text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+        },
+        {
+          image: "post_feat_img_20-700x441",
+          title: "Donec ornare pretium eget scelisque justo",
+          date: "October 11th, 2015 |",
+          commentsNumber: "Comments Off",
+          text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/styles/variables.scss";
 button {
-  font-weight: bold;
   background-color: black;
   width: 200px;
 }
+// DATA ARTICOLI
 .article-date {
   font-size: 12px;
   color: $cape-cod;
 }
+//LINEA DI SEPARAZIONE ARANCIONE
 .orange-line {
   height: 20px;
   width: 100px;
   border-bottom: 3px solid $salmon;
 }
 h6 {
+  color: $cape-cod;
   font-size: 12px;
   font-weight: 700;
 }
@@ -280,9 +264,11 @@ h2 {
 p {
   color: $cape-cod;
 }
+// SEZIONE A TUTTO SCHERMO SOTTO IL JUMBOTRON
 #jumbotron-sub-section {
   background-color: $silver-chalice;
 }
+// SEZIONE FEATURED-ARTICLE
 #featured-article {
   background: url("../assets/img/featured_article_1_bg.jpg") center center
     no-repeat;
@@ -290,11 +276,15 @@ p {
   .container {
     margin-top: 200px;
     margin-bottom: 150px;
+    h6 {
+      color: white;
+    }
     p {
       color: $white;
     }
   }
 }
+// SEZIONE REVIEWED PRODUCT
 #reviewed-product {
   background: url("../assets/img/featured_article_2_bg.jpg") center center
     no-repeat;
