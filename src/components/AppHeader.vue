@@ -126,6 +126,7 @@ export default {
         &:hover {
           i {
             display: block;
+            z-index: 999999;
           }
           a {
             color: white;
@@ -136,7 +137,7 @@ export default {
           color: #afe1e9;
         }
         i {
-          font-size: 30px;
+          font-size: 40px;
           position: absolute;
           bottom: 0;
           color: $eastern-blue;
