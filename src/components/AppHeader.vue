@@ -96,6 +96,14 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/styles/variables.scss";
+#header-logo {
+  img {
+    transform: scale(1);
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
 #header {
   position: fixed;
   left: 0;
@@ -284,9 +292,14 @@ label a {
   }
   label ul {
     position: fixed;
-    top: 300px;
-    bottom: 100px;
-    height: calc(100vh - 200px) !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh) !important;
+    width: 100vw;
+    background-color: white;
+    overflow-y: auto;
   }
   label ul li a {
     color: $eastern-blue !important;
@@ -299,7 +312,6 @@ label a {
     display: flex;
     align-items: center;
     align-content: center;
-    margin-top: 30px;
   }
   label ul li i {
     color: $eastern-blue !important;

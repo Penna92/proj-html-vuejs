@@ -40,11 +40,17 @@ button a {
 }
 
 // IMAGES
-img {
-  transition: transform 1s;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.1);
+div {
+  overflow: hidden;
+  img {
+    transition: opacity 1s, transform 1s;
+    transform: scale(1.2);
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1);
+      opacity: 0.9;
+    }
   }
 }
 

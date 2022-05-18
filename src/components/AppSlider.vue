@@ -1,10 +1,12 @@
 <template>
   <div>
-    <img
-      class="img-fluid"
-      :src="require('../assets/img/' + item.image + '.jpg')"
-      alt="Tablet-1"
-    />
+    <div>
+      <img
+        class="img-fluid"
+        :src="require('../assets/img/' + item.image + '.jpg')"
+        alt="Tablet-1"
+      />
+    </div>
     <h5 class="mt-3">{{ item.title }}</h5>
     <p class="article-date">
       {{ item.date }}

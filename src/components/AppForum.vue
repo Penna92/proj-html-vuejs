@@ -179,14 +179,14 @@ a {
       line-height: 70px;
       border-radius: 50%;
       background-color: $salmon;
-      transition: transform 0.5s !important;
+      transition: transform 1s !important;
       i {
         font-size: 32px;
         color: white;
       }
     }
     h5 {
-      transition: transform 0.5s;
+      transition: transform 1s;
       font-weight: 900;
     }
   }

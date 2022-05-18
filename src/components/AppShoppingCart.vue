@@ -2,6 +2,7 @@
   <a
     href="https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?irgwc=1&#38;clickid=V8GTRTVGixyIUnxSIMxN7w-dUkD0L43ZkTBxzc0&#38;iradid=275988&#38;irpid=1292887&#38;iradtype=ONLINE_TRACKING_LINK&#38;irmptype=mediapartner&#38;mp_value1=&#38;utm_campaign=af_impact_radius_1292887&#38;utm_medium=affiliate&#38;utm_source=impact_radius"
     id="shopping-cart"
+    target="_blank"
   >
     <i id="visible-icon" class="fa-solid fa-cart-plus"></i>
     <i id="invisible-icon" class="fa-solid fa-cart-plus"></i>
@@ -28,6 +29,7 @@ export default {
   box-shadow: 0 10px 20px 5px rgb(0 0 0 / 15%);
   text-align: center;
   overflow: hidden;
+  z-index: 99;
   &:hover {
     #visible-icon {
       transform: translateX(-60px);
