@@ -31,6 +31,7 @@ export default {
   height: 100vh;
   background: url("../assets/img/home_slider_bg.jpg") center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   div.container {
     h1 {
       font-size: 120px;

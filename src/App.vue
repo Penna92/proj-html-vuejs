@@ -5,6 +5,7 @@
       <AppJumbotron />
     </header>
     <main>
+      <app-shopping-cart />
       <AppMain />
       <AppForum />
       <AppNewsletter />
@@ -24,6 +25,7 @@ import AppJumbotron from "./components/AppJumbotron.vue";
 import AppForum from "./components/AppForum.vue";
 import AppNewsletter from "./components/AppNewsletter.vue";
 import AppToTop from "./components/AppToTop.vue";
+import AppShoppingCart from "./components/AppShoppingCart.vue";
 
 export default {
   name: "App",
@@ -35,6 +37,7 @@ export default {
     AppForum,
     AppNewsletter,
     AppToTop,
+    AppShoppingCart,
   },
 };
 </script>

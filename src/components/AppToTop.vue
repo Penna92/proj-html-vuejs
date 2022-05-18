@@ -21,7 +21,11 @@ export default {
   text-align: center;
   position: fixed;
   bottom: 0px;
-  right: 10px;
+  right: 20px;
+
+  &:hover {
+    background-color: $eastern-blue;
+  }
   a {
     display: block;
     height: 100%;
