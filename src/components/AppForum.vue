@@ -17,7 +17,10 @@
       <h2>Forum Sections</h2>
       <div class="orange-line"></div>
       <!-- MAIN GRID -->
-      <div class="container row d-flex justify-content-between gap-5 my-5">
+      <div
+        id="main-grid"
+        class="container row d-flex justify-content-between gap-5 my-5"
+      >
         <div
           class="
             card
@@ -118,6 +121,7 @@ a {
   height: 100px;
   background-color: black;
   cursor: pointer;
+  transition: 0.5s;
   &:hover {
     background-color: $eastern-blue;
   }
@@ -175,13 +179,14 @@ a {
       line-height: 70px;
       border-radius: 50%;
       background-color: $salmon;
+      transition: transform 0.5s !important;
       i {
         font-size: 32px;
         color: white;
       }
     }
     h5 {
-      transition: transform 0.3s;
+      transition: transform 0.5s;
       font-weight: 900;
     }
   }
@@ -200,6 +205,13 @@ a {
       font-weight: bold;
       width: 200px;
     }
+  }
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 1400px) {
+  #main-grid {
+    justify-content: center !important;
   }
 }
 </style>
