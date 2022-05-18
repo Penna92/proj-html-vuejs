@@ -5,8 +5,11 @@
       id="top-footer"
       class="d-flex justify-content-center align-items-center my-5"
     >
-      <section id="footer-links" class="container row">
-        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <section
+        id="footer-links"
+        class="container row d-flex justify-content-between"
+      >
+        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
           <li><h4>AVADA TECH FORUM</h4></li>
           <p class="my-3">
             Sed semper, nisl id feugiat eleifend, erat est digssim felis, quis
@@ -14,21 +17,21 @@
             sit amet mi intermentum.
           </p>
         </ul>
-        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
           <li><h4>POPULAR TOPICS</h4></li>
           <li v-for="(link, index) in popularTopics" :key="index" class="my-3">
             <a :href="link.landingPage" target="_blank"> {{ link.title }}</a>
             <hr />
           </li>
         </ul>
-        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
           <li><h4>RECENT POSTS</h4></li>
           <li v-for="(link, index) in recentPosts" :key="index" class="my-3">
             <a :href="link.landingPage" target="_blank"> {{ link.title }}</a>
             <hr />
           </li>
         </ul>
-        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
           <li><h4>LATEST REPLIES</h4></li>
           <li v-for="(link, index) in latestReplies" :key="index" class="my-3">
             <a :href="link.landingPage" target="_blank"> {{ link.title }}</a>
@@ -144,7 +147,8 @@ export default {
   border-bottom: 1px solid #eaeaea;
   #footer-links {
     ul {
-      padding: 30px;
+      padding: 0;
+      width: 280px;
       p {
         color: $cape-cod;
         height: 100%;
