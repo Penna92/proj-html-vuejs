@@ -40,7 +40,8 @@ button a {
 }
 
 // IMAGES
-div {
+header div,
+main div {
   overflow: hidden;
   img {
     transition: opacity 1s, transform 1s;
