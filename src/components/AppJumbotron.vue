@@ -8,7 +8,11 @@
       <h1>Tech Forum!</h1>
       <p>Discuss all the latest technology news and trends</p>
       <button type="button" class="btn text-white">
-        GET AVADA NOW! <i class="fa-solid fa-angle-right"></i>
+        <a
+          href="https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?irgwc=1&#38;clickid=V8GTRTVGixyIUnxSIMxN7w-dUkD0LDWdkTBxzc0&#38;iradid=275988&#38;irpid=1292887&#38;iradtype=ONLINE_TRACKING_LINK&#38;irmptype=mediapartner&#38;mp_value1=&#38;utm_campaign=af_impact_radius_1292887&#38;utm_medium=affiliate&#38;utm_source=impact_radius"
+          target="_blank"
+          >GET AVADA NOW! <i class="fa-solid fa-angle-right"></i
+        ></a>
       </button>
     </div>
     <!-- /MAIN JUMBOTRON TITLE -->

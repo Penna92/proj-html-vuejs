@@ -3,7 +3,11 @@
     <!-- READ OUR BLOG -->
     <div id="our-blog" class="text-center text-white">
       <h5>
-        <span>READ OUR BLOG <i class="fa-solid fa-right-long"></i></span>
+        <span
+          ><a href="https://avada.theme-fusion.com/forum/apple/" target="_blank"
+            >READ OUR BLOG <i class="fa-solid fa-right-long"></i
+          ></a>
+        </span>
       </h5>
     </div>
     <!-- /READ OUR BLOG -->
@@ -37,7 +41,12 @@
     <!-- GO TO OUR FORUM -->
     <div id="our-forum" class="text-center text-white">
       <h5>
-        <span>GO TO OUR FORUM <i class="fa-solid fa-right-long"></i></span>
+        <span
+          ><a
+            href="https://avada.theme-fusion.com/forum/forums/"
+            target="_blank"
+            >GO TO OUR FORUM <i class="fa-solid fa-right-long"></i></a
+        ></span>
       </h5>
     </div>
     <!-- /GO TO OUR FORUM -->
@@ -54,7 +63,9 @@
           Curabitur feugiat vulputate purus ipsums dolore ficilis uns etra.
         </p>
         <button type="button" class="btn text-white">
-          SIGN UP <i class="fa-solid fa-angle-right"></i>
+          <a href="https://avada.theme-fusion.com/forum/join/" target="_blank"
+            >SIGN UP <i class="fa-solid fa-angle-right"></i
+          ></a>
         </button>
       </div>
     </div>
@@ -96,6 +107,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";
+a {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
 #our-blog,
 #our-forum {
   height: 100px;

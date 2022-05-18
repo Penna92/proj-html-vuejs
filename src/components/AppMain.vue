@@ -108,7 +108,11 @@
             bibendum
           </p>
           <button type="button" class="btn btn-dark">
-            READ MORE <i class="fa-solid fa-angle-right"></i>
+            <a
+              href="https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/"
+              target="_blank"
+              >READ MORE <i class="fa-solid fa-angle-right"></i
+            ></a>
           </button>
         </div>
         <!-- REVIEWED PRODUCT -->

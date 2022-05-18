@@ -17,21 +17,21 @@
         <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <li><h4>POPULAR TOPICS</h4></li>
           <li v-for="(link, index) in popularTopics" :key="index" class="my-3">
-            <a href="" class="d-flex align-items-"> {{ link }}</a>
+            <a :href="link.landingPage" target="_blank"> {{ link.title }}</a>
             <hr />
           </li>
         </ul>
         <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <li><h4>RECENT POSTS</h4></li>
           <li v-for="(link, index) in recentPosts" :key="index" class="my-3">
-            <a href=""> {{ link }}</a>
+            <a :href="link.landingPage" target="_blank"> {{ link.title }}</a>
             <hr />
           </li>
         </ul>
         <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <li><h4>LATEST REPLIES</h4></li>
           <li v-for="(link, index) in latestReplies" :key="index" class="my-3">
-            <a href=""> {{ link }}</a>
+            <a :href="link.landingPage" target="_blank"> {{ link.title }}</a>
             <hr />
           </li>
         </ul>
@@ -45,22 +45,33 @@
       class="container mb-5 d-flex justify-content-between align-items-center"
     >
       <span>
-        © Copyright 2012 - 2022 | Avada Theme by <a href="">ThemeFusion</a> |
+        © Copyright 2012 - 2022 | Avada Theme by
+        <a href="https://theme-fusion.com/" target="_blank">ThemeFusion</a> |
         All Rights Reserved | Powered by
         <a href="https://github.com/Penna92" target="_blank">Penna92</a>
       </span>
       <div id="social-icons" class="d-flex gap-3">
         <div id="facebook" class="icon-circle">
-          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/ThemeFusionAvada/" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
         </div>
         <div id="twitter" class="icon-circle">
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://twitter.com/theme_fusion" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </div>
         <div id="instagram" class="icon-circle">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/themefusion/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
         <div id="youtube" class="icon-circle">
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a
+            href="https://www.youtube.com/channel/UC_C7uAOAH9RMzZs-CKCZ62w"
+            target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
         </div>
       </div>
     </div>
@@ -74,18 +85,52 @@ export default {
   data() {
     return {
       popularTopics: [
-        "Morbi vitae dui euismod vulputate sollicitudin",
-        "Vivamus pellenteque, felis quis varius",
-        "Donec ornare pretium eget scelisque justo",
+        {
+          title: "Morbi vitae dui euismod vulputate sollicitudin",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/morbi-vitae-dui-euismod-vulputate-sollicitudin/",
+        },
+        {
+          title: "Vivamus pellenteque, felis quis varius",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/vivamus-pellentesque-felis-quis-varius-hendrerit/",
+        },
+        {
+          title: "Donec ornare pretium eget scelisque justo",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/",
+        },
       ],
       recentPosts: [
-        "Morbi vitae dui euismod vulputate sollicitudin",
-        "Vivamus pellenteque, felis quis varius",
-        "Donec ornare pretium eget scelisque justo",
+        {
+          title: "Morbi vitae dui euismod vulputate sollicitudin",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/morbi-vitae-dui-euismod-vulputate-sollicitudin/",
+        },
+        {
+          title: "Vivamus pellenteque, felis quis varius",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/vivamus-pellentesque-felis-quis-varius-hendrerit/",
+        },
+        {
+          title: "Donec ornare pretium eget scelisque justo",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/",
+        },
       ],
       latestReplies: [
-        "Dario Pineda on Morbi vitae dui euismod vulputate sollicitudin",
-        "Dario Pineda on Morbi vitae dui euismod vulputate sollicitudin",
+        {
+          title:
+            "Dario Pineda on Morbi vitae dui euismod vulputate sollicitudin",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/morbi-vitae-dui-euismod-vulputate-sollicitudin/#comment-3",
+        },
+        {
+          title:
+            "Dario Pineda on Morbi vitae dui euismod vulputate sollicitudin",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/morbi-vitae-dui-euismod-vulputate-sollicitudin/#comment-2",
+        },
       ],
     };
   },

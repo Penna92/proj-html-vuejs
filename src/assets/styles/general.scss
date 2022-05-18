@@ -23,7 +23,7 @@ body {
   // font-family: $main-font;
 }
 
-// EFFECTS ON HOVER
+// BUTTONS
 button {
   font-weight: bold !important;
   &:hover {
@@ -31,10 +31,29 @@ button {
   }
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white !important;
+  }
+}
+
+// IMAGES
 img {
   transition: transform 0.3s;
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
   }
+}
+
+// LINKS
+a {
+  text-decoration: none;
+}
+
+// LIST ITEMS
+li {
+  list-style-type: none;
 }
