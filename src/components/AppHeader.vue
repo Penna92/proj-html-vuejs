@@ -19,22 +19,36 @@
         <!-- HAMBURGER MENU -->
         <label>
           <input type="checkbox" />
-          <span class="menu"> <span class="hamburger"></span> </span>
-          <ul>
+          <span @click="clickedMenu = !clickedMenu" class="menu">
+            <span class="hamburger"></span>
+          </span>
+          <ul v-if="clickedMenu === true" class="d-flex flex-column">
             <li v-for="(link, index) in headerLinks" :key="index">
-              <a href="#">{{ link }}</a>
+              <a :href="link.landingPage" target="_blank">{{ link.name }}</a>
             </li>
-            <button type="button" class="btn btn-dark">JOIN US</button>
-            <i class="fa-solid fa-magnifying-glass ms-3"></i>
+            <li>
+              <button type="button" class="btn btn-dark">
+                <a
+                  href="https://avada.theme-fusion.com/forum/join/"
+                  target="_blank"
+                  >JOIN US</a
+                >
+              </button>
+            </li>
           </ul>
         </label>
         <!-- /HAMBURGER MENU -->
         <ul id="navbar-ul" class="d-flex">
           <li v-for="(link, index) in headerLinks" :key="index" class="mx-3">
-            <a href="">{{ link }}</a> <i class="fa-solid fa-caret-down"></i>
+            <a :href="link.landingPage" target="_blank">{{ link.name }}</a>
+            <i class="fa-solid fa-caret-down"></i>
           </li>
         </ul>
-        <button type="button" class="btn btn-dark">JOIN US</button>
+        <button type="button" class="btn btn-dark">
+          <a href="https://avada.theme-fusion.com/forum/join/" target="_blank"
+            >JOIN US</a
+          >
+        </button>
         <i class="fa-solid fa-magnifying-glass ms-3"></i>
       </nav>
       <!-- /NAVBAR -->
@@ -47,14 +61,33 @@ export default {
   name: "AppHeader",
   data() {
     return {
+      clickedMenu: false,
       // NAVBAR LINKS ARRAY
       headerLinks: [
-        "Home",
-        "Apple",
-        "Microsoft",
-        "Android",
-        "Forums",
-        "Contact us",
+        {
+          name: "Home",
+          landingPage: "https://avada.theme-fusion.com/forum/",
+        },
+        {
+          name: "Apple",
+          landingPage: "https://avada.theme-fusion.com/forum/apple/",
+        },
+        {
+          name: "Microsoft",
+          landingPage: "https://avada.theme-fusion.com/forum/microsoft/",
+        },
+        {
+          name: "Android",
+          landingPage: "https://avada.theme-fusion.com/forum/android/",
+        },
+        {
+          name: "Forums",
+          landingPage: "https://avada.theme-fusion.com/forum/forums/",
+        },
+        {
+          name: "Contact us",
+          landingPage: "https://avada.theme-fusion.com/forum/contact-us/",
+        },
       ],
     };
   },
@@ -107,9 +140,21 @@ export default {
     }
     button {
       background-color: black;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
     }
     .fa-magnifying-glass {
       cursor: pointer;
+      color: #afe1e9;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
@@ -134,15 +179,6 @@ label .menu {
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   cursor: pointer;
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: center;
-  }
 }
 
 label .hamburger {
@@ -222,9 +258,7 @@ label ul {
 }
 
 label a {
-  margin-bottom: 1em;
   display: block;
-  color: #f38630;
   text-decoration: none;
 }
 
@@ -236,17 +270,41 @@ label a {
 }
 
 @media screen and (max-width: 992px) {
+  #header nav {
+    line-height: 50px;
+  }
   #navbar-ul li {
     display: none;
   }
-  // nav button {
-  //   display: none;
-  // }
+  nav button {
+    display: none;
+  }
   nav i {
     display: none;
   }
+  label ul {
+    position: fixed;
+    top: 300px;
+    bottom: 100px;
+    height: calc(100vh - 200px) !important;
+  }
   label ul li a {
     color: $eastern-blue !important;
+    height: 100% !important;
+  }
+  label ul li {
+    height: 50px !important;
+  }
+  label button {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+  }
+  label ul li i {
+    color: $eastern-blue !important;
+    display: block;
+    z-index: 9999;
   }
 }
 </style>

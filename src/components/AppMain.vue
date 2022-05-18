@@ -47,7 +47,7 @@
         <div
           class="col-12 col-md-6 col-lg-4 mb-3"
           v-for="card in sliderFirst"
-          :key="card"
+          :key="card.index"
         >
           <AppSlider :item="card" />
         </div>
@@ -76,7 +76,7 @@
         <div
           class="col-12 col-md-6 col-lg-4 mb-3"
           v-for="card in sliderSecond"
-          :key="card"
+          :key="card.index"
         >
           <AppSlider :item="card" />
         </div>
