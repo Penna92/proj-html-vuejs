@@ -124,40 +124,70 @@
           <div class="d-flex flex-column justify-content-between">
             <div class="thumbnails row my-3">
               <div class="col-4">
-                <img
-                  class="img-fluid"
-                  src="../assets/img/post_feat_img_23-147x118.jpg"
-                  alt="Smartwatch thumbnail"
-                />
+                <a
+                  href="https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="../assets/img/post_feat_img_23-147x118.jpg"
+                    alt="Smartwatch thumbnail"
+                  />
+                </a>
               </div>
               <div class="col-8">
-                <h5>Donec oranare pretium eget scelisque justo</h5>
+                <a
+                  href="https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/"
+                  target="_blank"
+                >
+                  <h5>Donec oranare pretium eget scelisque justo</h5>
+                </a>
                 <p class="article-date">October 11th, 2015 | Comments Off</p>
               </div>
             </div>
             <div class="thumbnails row my-3">
               <div class="col-4">
-                <img
-                  class="img-fluid"
-                  src="../assets/img/post_feat_img_22-147x118.jpg"
-                  alt="Smartwatch thumbnail"
-                />
+                <a
+                  href="https://avada.theme-fusion.com/forum/fusce-sollicitudin-nunc-sed-mi-placerat-varius-non/"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="../assets/img/post_feat_img_22-147x118.jpg"
+                    alt="Smartwatch thumbnail"
+                  />
+                </a>
               </div>
               <div class="col-8">
-                <h5>Donec oranare pretium eget scelisque justo</h5>
+                <a
+                  href="https://avada.theme-fusion.com/forum/fusce-sollicitudin-nunc-sed-mi-placerat-varius-non/"
+                  target="_blank"
+                >
+                  <h5>Fusce sollicitudin nunc sed placerat varius</h5>
+                </a>
                 <p class="article-date">October 11th, 2015 | Comments off</p>
               </div>
             </div>
             <div class="thumbnails row my-3">
               <div class="col-4">
-                <img
-                  class="img-fluid"
-                  src="../assets/img/post_feat_img_20-147x118.jpg"
-                  alt="Smartwatch thumbnail"
-                />
+                <a
+                  href="https://avada.theme-fusion.com/forum/proin-eu-purus-sed-arcu-aliquet-efficitur-curabitur-vens/"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="../assets/img/post_feat_img_20-147x118.jpg"
+                    alt="Smartwatch thumbnail"
+                  />
+                </a>
               </div>
               <div class="col-8">
-                <h5>Donec oranare pretium eget scelisque justo</h5>
+                <a
+                  href="https://avada.theme-fusion.com/forum/proin-eu-purus-sed-arcu-aliquet-efficitur-curabitur-vens/"
+                  target="_blank"
+                >
+                  <h5>Proin eu purus sed aru aliquet curabir vens</h5>
+                </a>
                 <p class="article-date">October 11th, 2015 | Comments off</p>
               </div>
             </div>
@@ -187,6 +217,8 @@ export default {
           date: "October 11th, 2015 |",
           commentsNumber: "2 Comments",
           text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/morbi-vitae-dui-euismod-vulputate-sollicitudin/",
         },
         {
           image: "post_feat_img_24-700x441",
@@ -194,6 +226,8 @@ export default {
           date: "October 11th, 2015 |",
           commentsNumber: "Comments Off",
           text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/vivamus-pellentesque-felis-quis-varius-hendrerit/",
         },
         {
           image: "post_feat_img_23-700x441",
@@ -201,30 +235,38 @@ export default {
           date: "October 11th, 2015 |",
           commentsNumber: "Comments Off",
           text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/",
         },
       ],
 
       sliderSecond: [
         {
           image: "post_feat_img_22-700x441",
-          title: "Morbi vitae dui euismod volputate sollicitudin",
+          title: "Fusce sollicitudin nunc sed placerat varius",
           date: "October 11th, 2015 |",
           commentsNumber: "Comments Off",
           text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/fusce-sollicitudin-nunc-sed-mi-placerat-varius-non/",
         },
         {
           image: "post_feat_img_21-700x441",
-          title: "Vivamus pellenteque, felis quis varius",
+          title: "Donec facilis sodales leo sit amet laoreet",
           date: "October 11th, 2015 |",
           commentsNumber: "Comments Off",
           text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/donec-facilisis-sodales-leo-sit-amet-laoreet-diam-facilisis/",
         },
         {
           image: "post_feat_img_20-700x441",
-          title: "Donec ornare pretium eget scelisque justo",
+          title: "Proin eu purus sed aru aliquet curabir vens",
           date: "October 11th, 2015 |",
           commentsNumber: "Comments Off",
           text: "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
+          landingPage:
+            "https://avada.theme-fusion.com/forum/proin-eu-purus-sed-arcu-aliquet-efficitur-curabitur-vens/",
         },
       ],
     };
@@ -297,5 +339,12 @@ p {
   h6 {
     color: white;
   }
+}
+// TUTORIAL & GUIDES
+button a {
+  color: white;
+}
+a {
+  color: black;
 }
 </style>

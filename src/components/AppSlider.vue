@@ -1,13 +1,17 @@
 <template>
   <div>
     <div>
-      <img
-        class="img-fluid"
-        :src="require('../assets/img/' + item.image + '.jpg')"
-        alt="Tablet-1"
-      />
+      <a :href="item.landingPage" target="_blank">
+        <img
+          class="img-fluid"
+          :src="require('../assets/img/' + item.image + '.jpg')"
+          alt="Tablet-1"
+        />
+      </a>
     </div>
-    <h5 class="mt-3">{{ item.title }}</h5>
+    <a :href="item.landingPage" target="_blank">
+      <h5 class="mt-3">{{ item.title }}</h5>
+    </a>
     <p class="article-date">
       {{ item.date }}
       <span :class="{ hasComments: item.commentsNumber !== 'Comments Off' }">{{
@@ -33,6 +37,7 @@ p {
   color: $cape-cod;
 }
 h5 {
+  color: black;
   font-size: 16px;
   font-weight: 900;
   cursor: pointer;
