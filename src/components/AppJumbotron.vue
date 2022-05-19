@@ -45,4 +45,15 @@ export default {
     }
   }
 }
+
+@media screen and (min-width: 451px) and (max-width: 767px) {
+  h1 {
+    font-size: 80px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
 </style>

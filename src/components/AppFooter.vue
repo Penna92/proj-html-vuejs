@@ -220,4 +220,10 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  #social-icons {
+    flex-direction: column;
+  }
+}
 </style>
