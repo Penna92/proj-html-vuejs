@@ -18,8 +18,8 @@
       <nav class="d-flex align-items-center">
         <!-- HAMBURGER MENU -->
         <label>
-          <input type="checkbox" />
-          <span @click="clickedMenu = !clickedMenu" class="menu">
+          <input @click="clickedMenu = !clickedMenu" type="checkbox" />
+          <span class="menu">
             <span class="hamburger"></span>
           </span>
           <ul v-if="clickedMenu === true" class="d-flex flex-column">
@@ -98,6 +98,8 @@ export default {
 @import "../assets/styles/variables.scss";
 #header-logo {
   img {
+    cursor: pointer;
+    transition: 1s;
     transform: scale(1);
     &:hover {
       transform: scale(0.9);
@@ -278,9 +280,12 @@ label a {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #header nav {
     line-height: 50px;
+  }
+  #navbar-ul {
+    display: none;
   }
   #navbar-ul li {
     display: none;
@@ -293,14 +298,25 @@ label a {
   }
   label ul {
     position: fixed;
-    display: flex;
+    display: flex !important;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh) !important;
-    width: 100vw;
-    background-color: white;
+    // background-color: white;
     overflow-y: auto;
+    -webkit-animation: smooth 1s ease-in;
+    -moz-animation: smooth 1s ease-in;
+    -o-animation: smooth 1s ease-in;
+    -ms-animation: smooth 1s ease-in;
+    animation: smooth 1s ease-in;
+  }
+  @keyframes smooth {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   label ul li a {
     color: $eastern-blue !important;

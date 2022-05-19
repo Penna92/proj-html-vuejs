@@ -64,9 +64,14 @@
             Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at
             bibendum sadips ets ipsums dolores facilis uns leo lectus.
           </p>
-          <button type="button" class="btn btn-dark">
-            READ MORE <i class="fa-solid fa-angle-right"></i>
-          </button>
+          <a
+            href="https://avada.theme-fusion.com/forum/morbi-vitae-dui-euismod-vulputate-sollicitudin/"
+            target="_blank"
+          >
+            <button type="button" class="btn btn-dark">
+              READ MORE <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </a>
         </div>
       </div>
       <!-- /FEATURED ARTICLE -->
@@ -107,13 +112,14 @@
             Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at
             bibendum
           </p>
-          <button type="button" class="btn btn-dark">
-            <a
-              href="https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/"
-              target="_blank"
-              >READ MORE <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </button>
+          <a
+            href="https://avada.theme-fusion.com/forum/donec-ornare-pretium-eget-scelerisque-justo-commodo/"
+            target="_blank"
+          >
+            <button type="button" class="btn btn-dark">
+              READ MORE <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </a>
         </div>
         <!-- REVIEWED PRODUCT -->
 
